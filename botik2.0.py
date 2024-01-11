@@ -24,10 +24,6 @@ def start(message):
     if message.text == '/start':
         bot.send_message(message.chat.id, 'Мова/Sprache:', reply_markup=markup)
 
-@bot.message_handler(commands=['admin'])
-def message (message):
-    bot.send_message(message.chat.id, 'ti pidor')
-
 @bot.message_handler(commands=['buymenu'])
 def welcome(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
